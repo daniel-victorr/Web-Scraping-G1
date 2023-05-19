@@ -11,7 +11,7 @@ response = requests.get(url)
 
 site = BeautifulSoup(response.content, 'html.parser')
 sleep(1)
-
+ 
 noticias = site.findAll('div', attrs={'class':'feed-post-body'})
 
 for noticia in noticias:
